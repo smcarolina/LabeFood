@@ -26,6 +26,6 @@ Todo controle do fluxo de trabalho está sendo feito pelo Trello, utilizando mé
 
 ## Link do Surge 
 ###### Observação: link com a fase atual de implementação. Projeto ainda não concluído
-- https://romantic-flesh.surge.sh/
-- Login: astrodev@future4.com
+- https://quarrelsome-orange.surge.sh
+- Login: carol@email.com
 - Senha: 123456
