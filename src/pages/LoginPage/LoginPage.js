@@ -1,14 +1,32 @@
 import React from "react";
-import Header from '../../components/Header/Header';
+import LoginForm from "./LoginForm";
+import { LogoImage, ScreenContainer, SignUpButtonContainer } from "./styled";
+import logo from '../../images/futureEatsInvert.png'
+import  Button from "@material-ui/core/Button";
+import { useHistory } from "react-router-dom";
+import { goToSignUpPage } from "../../routes/Coordinator";
+import useUnprotectedPage from "../../hooks/useUnprotectedPage";
 
 const LoginPage = () => {
+    useUnprotectedPage()
+    const history = useHistory()
 
-    
-  
-    return <div>
-        <Header title={"Future Eats"}/>
-        Login
-    </div>
+    return <ScreenContainer>
+        <LogoImage src={logo}/>
+        <LoginForm />
+        <SignUpButtonContainer>
+            <Button 
+                onClick={()=>goToSignUpPage(history)}
+                type={"submit"}
+                fullWidth
+                variant={"text"}
+                color={"primary"}
+            >
+                Não possui uma conta? Cadastre-se
+
+            </Button>
+        </SignUpButtonContainer>
+    </ScreenContainer>
 }
 
 export default LoginPage

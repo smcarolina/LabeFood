@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
-export const FooterContainer = styled.footer`
+
+export const BottomContainer = styled.footer`
     display: flex;
     justify-content: center;
     justify-items: flex-end;
-    position: absolute;
+    position: fixed;
     bottom:0;
+    margin-top: 4rem;
     width:100%;
-    box-shadow: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px 2px;
+    background-color: white;
 `

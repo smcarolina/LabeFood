@@ -1,27 +1,56 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import BottomNavigation from '@mui/material/BottomNavigation';
-import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import { FooterContainer } from './styled';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import React, { useState } from 'react';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import HomeIcon from '@mui/icons-material/Home';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import { goToCartPage, goToHomePage, goToProfilePage } from '../../routes/Coordinator';
+import { useHistory } from 'react-router-dom';
+import { BottomContainer } from './styled';
+
+
 
 const Footer = () => {
+  const [value, setValue] = useState("recent");
 
+  const handleChange = (event, newValue) => {
+    if (newValue === "home") {
+      goToHomePage(history)
+    }
+    if (newValue === "cart") {
+      goToCartPage(history)
+    }
+    if (newValue === "profile") {
+      goToProfilePage(history)
+    }
+  };
 
-    return (
-        <FooterContainer>
+  const history = useHistory()
 
-            <Box sx={{ width: 340 }}>
-                <BottomNavigation>
-                    <BottomNavigationAction label="Recents" icon={<HomeOutlinedIcon />} />
-                    <BottomNavigationAction label="Favorites" icon={<ShoppingCartOutlinedIcon />} />
-                    <BottomNavigationAction label="Nearby" icon={<PermIdentityOutlinedIcon />} />
-                </BottomNavigation>
-            </Box>
-        </FooterContainer>
-    );
+  return (
+    <BottomContainer>
+      <BottomNavigation
+        value={value}
+        onChange={handleChange}
+      >
+        <BottomNavigationAction
+          label="Home"
+          value="home"
+          icon={<HomeIcon />}
+
+        />
+        <BottomNavigationAction
+          label="Carrinho"
+          value="cart"
+          icon={<ShoppingCartOutlinedIcon />}
+        />
+        <BottomNavigationAction
+          label="Perfil"
+          value="profile"
+          icon={<PersonOutlineOutlinedIcon />}
+        />
+      </BottomNavigation>
+    </BottomContainer>
+  );
 }
-
 export default Footer;
