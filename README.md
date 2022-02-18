@@ -6,8 +6,8 @@ Este é um projeto realizado durante o bootcamp de Desenvolvimento Web Full Stac
 ```
 Clonar o repositório do projeto:
 ```
-- $ git clone https://github.com/future4code/maryam-labe-food5.git
-- $ cd maryam-labe-food5
+- $ git clone https://github.com/smcarolina/LabeFood.git
+- $ cd LabeFood
 
 ```
 Instalar as dependências e executar:
@@ -16,7 +16,7 @@ Instalar as dependências e executar:
 - $ npm start
 
 ## Desenvolvimento
-Utlizei Material UI  Styled Components para implementar o layout sugerido para o projeto. O objetivo era um layout simples e intuitivo, que tornasse a experiência do cliente mais agradável possível.
+Utlizei Material UI e Styled Components para implementar o layout sugerido para o projeto. O objetivo era um layout simples e intuitivo, que tornasse a experiência do cliente mais agradável possível.
 Além de hooks, custom hooks e componentes funcionais do React.
 
 ## Status
