@@ -24,6 +24,16 @@ Além de hooks, custom hooks e componentes funcionais do React.
 Em andamento. 
 Todo controle do fluxo de trabalho está sendo feito pelo Trello, utilizando método Kanban.
 
+### O que funciona
+- Páginas de Login/Cadastro
+- Renderização da lista de restaurantes de restaurantes
+- Renderização da lista de pratos de cada restaurante
+
+### O que ainda não funciona
+- Adicionar prato ao carrinho
+- Página de carrinho
+- Página de perfil do usuário
+- Filtros de buscar restaurante por nome e por categoria
 ## Prints
 
 ## Link do Surge 
