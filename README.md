@@ -1,5 +1,6 @@
 # LabeFood
-Este é um projeto realizado durante o curso de Desenvolvimento Web Full Stack da Labenu. O objetivo é implementar um aplicativo de delivery de comida, utilizando React.js, Node.js,  API fornecida pela instituição e outras tecnologias trabalhadas no curso. 
+Este é um projeto realizado durante o bootcamp de Desenvolvimento Web Full Stack da Labenu. O objetivo é implementar um aplicativo de delivery de comida, utilizando React.js, Node.js,  API fornecida pela instituição e outras tecnologias trabalhadas durante o curso. 
+
 ## Configuração de ambiente
 
 ```
@@ -15,7 +16,8 @@ Instalar as dependências e executar:
 - $ npm start
 
 ## Desenvolvimento
-Utlizei Material UI para implementar o layout sugerido para o projeto. O objetivo era um layout simples e intuitivo, que tornasse a experiência do cliente mais agradável possível.
+Utlizei Material UI  Styled Components para implementar o layout sugerido para o projeto. O objetivo era um layout simples e intuitivo, que tornasse a experiência do cliente mais agradável possível.
+Além de hooks, custom hooks e componentes funcionais do React.
 
 ## Status
 
