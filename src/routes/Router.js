@@ -8,7 +8,7 @@ import LoginPage from "../pages/LoginPage/LoginPage";
 import ProfilePage from "../pages/ProfilePage/ProfilePage";
 import RestaurantPage from "../pages/RestaurantPage/RestaurantPage";
 import SearchPage from "../pages/SearchPage/SearchPage";
-// import { SignupAddressPage } from "../pages/SignupPage/SignupAddressPage";
+import SignupAddressPage from "../pages/AddressPage/AddressPage";
 import SignUpPage from "../pages/SignUpPage/SignUpPage";
 // import { WishPage } from "../pages/WishPage/WishPage";
 // import SignUpEndereco from "../pages/SignupPage/SignUpEndereco";
@@ -27,9 +27,9 @@ export const Router = () => {
                 <Route exact path='/cadastro'>
                     <SignUpPage />
                 </Route>
-                {/* <Route exact path='/cadastro/endereco'>
+                <Route exact path='/cadastro/endereco'>
                     <SignupAddressPage />
-                </Route> */}
+                </Route>
                 <Route exact path='/home'>
                     <HomePage   />
                 </Route>

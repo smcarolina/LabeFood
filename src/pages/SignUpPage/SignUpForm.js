@@ -11,7 +11,12 @@ const SignupForm = () => {
 
     const history = useHistory()
 
-    const [form, onChange, clear] = useForm({ name: "", email: "", cpf: "", password: "" });
+    const [form, onChange, clear] = useForm({ 
+        name: "", 
+        email: "", 
+        cpf: "", 
+        password: "" 
+    });
 
     const onSubmitForm = (event) => {
         event.preventDefault()
@@ -47,6 +52,7 @@ const SignupForm = () => {
                     fullWidth
                     required
                     type={"email"}
+                    placeholder={"name@example.com"}
                 />
             </InputsContainer>
 

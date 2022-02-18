@@ -26,8 +26,8 @@ export const goToSignUpPage = (history) => {
     history.push("/cadastro")
 }
 
-export const goToUpEndereco = (history) => {
-    history.push("/endereco")
+export const goToAddresPage = (history) => {
+    history.push("cadastro/endereco")
 }
 
 export const goToSearchPage = (history) => {

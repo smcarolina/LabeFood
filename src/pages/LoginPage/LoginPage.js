@@ -8,7 +8,7 @@ import { goToSignUpPage } from "../../routes/Coordinator";
 import useUnprotectedPage from "../../hooks/useUnprotectedPage";
 
 const LoginPage = () => {
-    useUnprotectedPage()
+    // useUnprotectedPage()
     const history = useHistory()
 
     return <ScreenContainer>
